@@ -186,7 +186,7 @@ def main():
     # with open(f"test_{file_num}.in") as f:
     #     lines = f.readlines()
     text = input()
-    lines = text.readlines()
+    lines = text.split("/n")
 
     # read data from stdin using input() and create polynomial p
     p = LinkedList()
