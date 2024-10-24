@@ -182,9 +182,14 @@ class LinkedList:
 
 
 def main():
-    text = input()
-    with open(text) as f:
-        lines = f.readlines()
+    line = input()
+    lines = [line]
+    try:
+        while line is not None:
+            line = input()
+            lines.append(line)
+    except:
+        pass
 
     # read data from stdin using input() and create polynomial p
     p = LinkedList()
