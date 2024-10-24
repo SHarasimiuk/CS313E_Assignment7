@@ -191,6 +191,7 @@ def main():
     except:
         pass
 
+    print(lines)
     # read data from stdin using input() and create polynomial p
     p = LinkedList()
     p_len = int(lines[0])
@@ -200,7 +201,8 @@ def main():
 
     # read data from stdin using input() and create polynomial q
     q = LinkedList()
-    for i in range(p_len + 3, len(lines)):
+    q_len = int(lines[p_len + 2])
+    for i in range(p_len + 3, p_len + 3 + q_len):
         term = lines[i].split()
         q.insert_term(int(term[0]), int(term[1]))
 
