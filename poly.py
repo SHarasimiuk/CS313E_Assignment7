@@ -182,11 +182,9 @@ class LinkedList:
 
 
 def main():
-    # file_num = int(input("Choose a file number: "))
-    # with open(f"test_{file_num}.in") as f:
-    #     lines = f.readlines()
     text = input()
-    lines = text.split("\n")
+    with open(text) as f:
+        lines = f.readlines()
 
     # read data from stdin using input() and create polynomial p
     p = LinkedList()
