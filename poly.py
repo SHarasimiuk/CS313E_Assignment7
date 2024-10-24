@@ -191,7 +191,6 @@ def main():
     except:
         pass
 
-    print(lines)
     # read data from stdin using input() and create polynomial p
     p = LinkedList()
     p_len = int(lines[0])
